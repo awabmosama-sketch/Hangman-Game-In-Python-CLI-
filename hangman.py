@@ -61,7 +61,9 @@ while wrong_guesses <6 :
     #---- Print The Win Statement ----
     if "_" not in guessedchar:
         print(f"Congratulations! You guessed the word ,{secretword}, and won!")
+        break
     #---- Print The Lose Statement ----
     if wrong_guesses == 6:
         print(HANGMAN_PICS[6])
         print(f"Game Over ! \n The Secret Word Is ,{secretword},")
+        break
